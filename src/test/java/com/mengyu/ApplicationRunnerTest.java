@@ -33,10 +33,4 @@ public class ApplicationRunnerTest {
         String[] inputArgs = {""};
         applicationRunner.run(inputArgs);
     }
-
-    @Test(expected = InvalidParameterException.class)
-    public void test_EmptyServerLogFilePath() throws IOException {
-        String[] inputArgs = {""};
-        applicationRunner.run(inputArgs);
-    }
 }

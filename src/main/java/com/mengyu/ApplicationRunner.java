@@ -23,8 +23,13 @@ public class ApplicationRunner implements CommandLineRunner {
         if (args.length != 1 || args[0].isEmpty()) {
             throw new InvalidParameterException("Please provide a valid file path of log file");
         }
+        long startTime = System.nanoTime();
         String filePath = args[0];
         logger.info("file path " + filePath);
         EventController.parseLogFile(filePath);
+        long endTime   = System.nanoTime();
+        long totalTime = (endTime - startTime);
+        double seconds = (double)totalTime / 1_000_000_000.0;
+        logger.info("totalTime: {}", seconds);
     }
 }

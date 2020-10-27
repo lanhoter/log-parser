@@ -8,6 +8,8 @@ Repositry for parsing server logs and flag any long events that takes longer tha
 
 #### 1. Install Dependencies
 
+if you are on Mac
+
 ```sh
 
 ```

@@ -25,3 +25,5 @@ hs_err_pid*
 
 build/
 
+eventdb.properties
+eventdb.script
